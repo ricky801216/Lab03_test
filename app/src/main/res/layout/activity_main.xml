@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="14dp"
+    android:layout_weight="1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.student.lab03_test.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/right"
+    android:layout_weight="1"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:src="@drawable/aaa"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黃蜂"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/fraction_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginBottom="15dp"
+        android:textSize="50sp"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="+3分球"
+        android:background="#5C6BC0"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:onClick="threefraction"/>
+    <Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="14dp"
+        android:background="#5C6BC0"
+        android:textColor="#FFFFFF"
+    android:text="+2分球"
+    android:gravity="center"
+        android:onClick="twofraction"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="罰球"
+        android:background="#5C6BC0"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:onClick="penalty"/>
+
+ </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/right"
+        >
+        <ImageView
+            android:src="@drawable/sss"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="勇士"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/fraction_text_viewA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="15dp"
+            android:textSize="50sp"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_gravity="center"
+            android:text="+3分球"
+            android:background="#5C6BC0"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:onClick="threefractionA"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_gravity="center"
+            android:text="+2分球"
+            android:background="#5C6BC0"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:onClick="twofractionA"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_gravity="center"
+            android:text="罰球"
+            android:background="#5C6BC0"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:onClick="penaltyA"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        android:background="#5C6BC0"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="reset"
+        />
+
+
+
+
+</RelativeLayout>
